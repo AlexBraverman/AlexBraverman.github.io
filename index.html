@@ -6,7 +6,6 @@
   <title>Alex Braverman</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    /* quick inline styles if style.css isn’t loaded yet */
     body {
       font-family: "Helvetica Neue", Arial, sans-serif;
       background-color: #fafafa;
@@ -17,8 +16,17 @@
     header {
       background-color: #b31b1b;
       color: white;
-      padding: 15px 0;
+      padding: 8px 0; /* smaller banner */
       text-align: center;
+    }
+    header h1 {
+      font-size: 2em;
+      margin: 10px 0 5px 0;
+    }
+    header p {
+      font-size: 1.1em;
+      margin: 0;
+      font-weight: 400;
     }
     nav {
       background: #eee;
@@ -41,14 +49,14 @@
       text-align: left;
     }
     img.profile {
-  display: block;
-  margin: 20px auto;
-  width: 60%;
-  height: auto;
-  border-radius: 8px; /* slight rounding for aesthetics */
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-    h1, h2 {
+      display: block;
+      margin: 20px auto;
+      width: 60%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    h2 {
       color: #b31b1b;
       text-align: center;
     }
@@ -67,7 +75,7 @@
 <body>
   <header>
     <h1>Alex Braverman</h1>
-    <p>Cornell University • Computer Science Freshman</p>
+    <p>Undergraduate Researcher at Cornell University</p>
   </header>
 
   <nav>
@@ -77,12 +85,11 @@
   </nav>
 
   <main>
-    <!-- 👇 Your image (must be in images/alex.jpg) -->
     <img src="alex.jpg" alt="Alex Braverman" class="profile">
 
     <h2>Welcome!</h2>
     <p>
-      Hi! I'm <strong>Alex Braverman</strong>, a first-year student at Cornell University majoring in Computer Science. 
+      Hi! I'm <strong>Alex Braverman</strong>, an undergraduate researcher at Cornell University majoring in Computer Science. 
       I’m interested in artificial intelligence, language models, and computational reasoning. 
       I’m passionate about how AI can be applied to scientific discovery and understanding human communication.
     </p>
