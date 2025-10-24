@@ -5,6 +5,65 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alex Braverman - Cornell CS</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* quick inline styles if style.css isn’t loaded yet */
+    body {
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      background-color: #fafafa;
+      color: #222;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #b31b1b;
+      color: white;
+      padding: 15px 0;
+      text-align: center;
+    }
+    nav {
+      background: #eee;
+      text-align: center;
+      padding: 10px 0;
+    }
+    nav a {
+      margin: 0 20px;
+      color: #b31b1b;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+      text-align: left;
+    }
+    img.profile {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      display: block;
+      margin: 20px auto;
+      object-fit: cover;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    h1, h2 {
+      color: #b31b1b;
+      text-align: center;
+    }
+    footer {
+      text-align: center;
+      color: #777;
+      font-size: 0.9em;
+      margin: 40px 0;
+    }
+    footer a {
+      color: #b31b1b;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -19,21 +78,35 @@
   </nav>
 
   <main>
-    <img src="alex.jpg" alt="Alex Braverman" class="profile">
-    <h2>Welcome!</h2>
+    <!-- 👇 Your image (must be in images/alex.jpg) -->
+    <img src="images/alex.jpg" alt="Alex Braverman" class="profile">
 
-    <p>Hi! I'm <strong>Alex Braverman</strong>, a first-year student at Cornell University majoring in Computer Science. 
-    I’m interested in artificial intelligence, language models, and computational reasoning. 
-    I’m passionate about how AI can be applied to scientific discovery and understanding human communication.</p>
+    <h2>Welcome!</h2>
+    <p>
+      Hi! I'm <strong>Alex Braverman</strong>, a first-year student at Cornell University majoring in Computer Science. 
+      I’m interested in artificial intelligence, language models, and computational reasoning. 
+      I’m passionate about how AI can be applied to scientific discovery and understanding human communication.
+    </p>
 
     <h2>What I'm up to</h2>
-    <p>Currently exploring neural reasoning and large language model evaluation, combining techniques like MCTS and A*-based search for math reasoning tasks.</p>
+    <p>
+      Currently exploring neural reasoning and large language model evaluation, combining techniques like 
+      MCTS and A*-based search for math reasoning tasks.
+    </p>
 
-
+    <h2>Connect with me</h2>
+    <p style="text-align:center;">
+      <a href="https://www.linkedin.com/in/alexander-braverman-437b07227/" target="_blank">LinkedIn</a> •
+      <a href="https://github.com/alexbraverman" target="_blank">GitHub</a> •
+      <a href="https://scholar.google.com/citations?hl=en&user=IiwU8XkAAAAJ&view_op=list_works&gmla=AKzYXQ00h51V5Ud1vX2xJl2lGNBvQ1r3O7HU3FgVoDHvoYeExcROPItGlApsPujYEPkZv-Yu3rr4KaDbkPUrFgLS" target="_blank">Google Scholar</a>
+    </p>
   </main>
 
   <footer>
-    <p>© 2025 Alex Braverman • <a href="mailto:alexbraverman@cornell.edu">alexbraverman@cornell.edu</a></p>
+    <p>
+      © 2025 Alex Braverman • 
+      <a href="mailto:ab3349@cornell.edu">ab3349@cornell.edu</a>
+    </p>
   </footer>
 </body>
 </html>
