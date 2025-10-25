@@ -14,11 +14,11 @@
       padding: 0;
     }
 
-    /* Header red banner same as index */
+    /* Header */
     header {
       background-color: #b31b1b;
       color: white;
-      padding: 8px 0; /* same as index page */
+      padding: 8px 0;
       text-align: center;
     }
     header h1 {
@@ -26,13 +26,14 @@
       margin: 10px 0;
     }
 
+    /* Navigation */
     nav {
       background: #eee;
       text-align: center;
       padding: 10px 0;
     }
     nav a {
-      margin: 0 20px;
+      margin: 0 15px;
       color: #b31b1b;
       text-decoration: none;
       font-weight: bold;
@@ -41,6 +42,7 @@
       text-decoration: underline;
     }
 
+    /* Main content */
     main {
       max-width: 800px;
       margin: 40px auto;
@@ -50,6 +52,25 @@
     h2 {
       color: #b31b1b;
       text-align: center;
+      margin-bottom: 20px;
+    }
+
+    ul.publications {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul.publications li {
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+
+    ul.publications a {
+      color: #b31b1b;
+      text-decoration: none;
+    }
+    ul.publications a:hover {
+      text-decoration: underline;
     }
 
     footer {
@@ -77,15 +98,18 @@
 
   <main>
     <h2>Publications</h2>
-    <p>Here are some of the research projects and papers I’ve worked on or am currently exploring:</p>
+    <p>Here are some of my research projects and papers:</p>
 
-    <ul>
-Braverman, A. and Liu, Z. 2023. Toward Fast Query Serving in Key-Value Store Migration with Approximate
-Telemetry. SIGMETRICS Performance Evaluation Review. 51, 2 (Sept. 2023), 91–93. https://doi.org/
-10.1145/3626570.3626604
-Braverman, A., Zhang, W., & Gu, Q. (2024). Mitigating hallucination in large language models with explanatory
-prompting. In NeurIPS 2024 Workshop on Statistical Foundations of LLMs and Foundation Models. https://
-openreview.net/pdf/12b1334745e10059579911fa26e88edbf8f4ff59.pdf
+    <ul class="publications">
+      <li>
+        Braverman, A. and Liu, Z. (2023). <strong>Toward Fast Query Serving in Key-Value Store Migration with Approximate Telemetry.</strong> <em>SIGMETRICS Performance Evaluation Review, 51(2), 91–93.</em> 
+        <a href="https://doi.org/10.1145/3626570.3626604" target="_blank" rel="noopener noreferrer">[DOI]</a>
+      </li>
+
+      <li>
+        Braverman, A., Zhang, W., & Gu, Q. (2024). <strong>Mitigating hallucination in large language models with explanatory prompting.</strong> <em>NeurIPS 2024 Workshop on Statistical Foundations of LLMs and Foundation Models.</em> 
+        <a href="https://openreview.net/pdf/12b1334745e10059579911fa26e88edbf8f4ff59.pdf" target="_blank" rel="noopener noreferrer">[PDF]</a>
+      </li>
     </ul>
   </main>
 
