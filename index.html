@@ -1,146 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alex Braverman</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    /* Basic page setup */
-    body {
-      font-family: "Helvetica Neue", Arial, sans-serif;
-      background-color: #fafafa;
-      color: #222;
-      margin: 0;
-      padding: 0;
-    }
-
-    /* Header */
-    header {
-      background-color: #b31b1b;
-      color: white;
-      padding: 8px 0;
-      text-align: center;
-    }
-    header h1 {
-      font-size: 2em;
-      margin: 10px 0;
-    }
-
-    /* Navigation */
-    nav {
-      background: #eee;
-      text-align: center;
-      padding: 10px 0;
-    }
-    nav a {
-      margin: 0 15px;
-      color: #b31b1b;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    /* Main content */
-    main {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
-      text-align: left;
-    }
-
-    /* Profile image */
-    img.profile {
-      display: block;
-      margin: 20px auto;
-      width: 60%;
-      max-width: 300px;
-      height: auto;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-
-    /* Headings */
-    h2 {
-      color: #b31b1b;
-      text-align: center;
-    }
-
-    /* News list */
-    ul.news {
-      list-style-type: disc;
-      padding-left: 20px;
-    }
-
-    /* Footer */
-    footer {
-      text-align: center;
-      color: #777;
-      font-size: 0.9em;
-      margin: 40px 0;
-    }
-    footer a {
-      color: #b31b1b;
-      text-decoration: none;
-    }
-
-    /* Responsive adjustments */
-    @media (max-width: 600px) {
-      img.profile {
-        width: 90%;
-        max-width: none;
-      }
-
-      nav a {
-        display: block;
-        margin: 5px 0;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alex Braverman - Freshman at Cornell University studying Computer Science. Research in LLMs and reinforcement learning.">
+    <title>Alex Braverman</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Alex Braverman</h1>
-  </header>
+    <div class="wrapper">
+        <header>
+            <div class="profile-container">
+                <img src="alex.png" alt="Profile Picture of Alex Braverman" class="profile-img">
+            </div>
+            <h1>Alex Braverman</h1>
+            <p class="email">ab3349 [at] cornell [dot] edu</p>
+            <p class="view">
+                <a href="https://www.linkedin.com/in/alexander-braverman-437b07227/" target="_blank">LinkedIn</a> &bull; 
+                <a href="https://github.com/AlexBraverman" target="_blank">GitHub</a> &bull; 
+                <a href="https://scholar.google.com/citations?user=IiwU8XkAAAAJ&hl=en" target="_blank">Google Scholar</a>
+            </p>
+        </header>
 
-  <nav>
-    <a href="index.html">Home</a> »
-    <a href="publications.html">Publications</a>
-  </nav>
+        <section>
+            <h2 id="about-me">About Me</h2>
+            <p>Hi! I'm <strong>Alex Braverman</strong>, a freshman at Cornell University majoring in Computer Science. My research interests include large language models and reinforcement learning.</p>
 
-  <main>
-    <img src="alex1.jpg" alt="Alex Braverman" class="profile">
+            <h2 id="news">News</h2>
+            <ul class="news-list">
+                <li>
+                    <span class="date">October 2025</span>
+                    <p>I&rsquo;m excited to share that our paper, <em>"Test-Time Scaling for Multistep Reasoning in Small Language Models via A* Search"</em>, has been accepted to the LAW 2025 Workshop at NeurIPS 2025! Thank you to my coauthors, Weitong Zhang and Quanquan Gu.</p>
+                </li>
+            </ul>
 
-    <p>
-      Hi! I'm <strong>Alex Braverman</strong>, a freshman at Cornell University majoring in Computer Science. 
-      My research interests include large language models and reinforcement learning.
-    </p>
+            <h2 id="publications">Publications</h2>
+            <ul class="pub-list">
+                <li>
+                    <p>
+                        <strong>Test-Time Scaling for Multistep Reasoning in Small Language Models via A* Search.</strong><br>
+                        Braverman, A., Zhang, W., & Gu, Q. (2025).<br>
+                        <em>NeurIPS 2025 Workshop on Bridging Language, Agent, and World Models for Reasoning and Planning</em> <a href="https://openreview.net/pdf?id=Wrdt22ifum" target="_blank" class="pdf-link">[PDF]</a>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <strong>Mitigating hallucination in large language models with explanatory prompting.</strong><br>
+                        Braverman, A., Zhang, W., & Gu, Q. (2024).<br>
+                        <em>NeurIPS 2024 Workshop on Statistical Foundations of LLMs and Foundation Models.</em> <a href="https://openreview.net/pdf/12b1334745e10059579911fa26e88edbf8f4ff59.pdf" target="_blank" class="pdf-link">[PDF]</a>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <strong>Toward Fast Query Serving in Key-Value Store Migration with Approximate Telemetry.</strong><br>
+                        Braverman, A. and Liu, Z. (2023).<br>
+                        <em>SIGMETRICS Performance Evaluation Review, 51(2), 91&ndash;93.</em> <a href="https://dl.acm.org/doi/10.1145/3626570.3626604" target="_blank" class="pdf-link">[DOI]</a>
+                    </p>
+                </li>
+            </ul>
+        </section>
 
-    <h2>News</h2>
-    <ul class="news">
-      <li>
-        <strong>October 2025:</strong> I’m excited to share that our paper, 
-        <em>"Test-Time Scaling for Multistep Reasoning in Small Language Models via A* Search"</em>, 
-        has been accepted to the 
-        <a href="https://sites.google.com/view/law-2025" target="_blank" rel="noopener noreferrer">LAW 2025 Workshop</a> 
-        at NeurIPS 2025! Thank you to my coauthors, Weitong Zhang and Quanquan Gu.
-      </li>
-    </ul>
-
-    <p style="text-align:center;">
-      <a href="https://www.linkedin.com/in/alexander-braverman-437b07227/" target="_blank">LinkedIn</a> •
-      <a href="https://github.com/alexbraverman" target="_blank">GitHub</a> •
-      <a href="https://scholar.google.com/citations?hl=en&user=IiwU8XkAAAAJ&view_op=list_works&gmla=AKzYXQ00h51V5Ud1vX2xJl2lGNBvQ1r3O7HU3FgVoDHvoYeExcROPItGlApsPujYEPkZv-Yu3rr4KaDbkPUrFgLS" target="_blank">Google Scholar</a>
-    </p>
-  </main>
-
-  <footer>
-    <p>
-      © 2025 Alex Braverman • 
-      <a href="mailto:ab3349@cornell.edu">ab3349@cornell.edu</a>
-    </p>
-  </footer>
+    </div>
 </body>
 </html>
