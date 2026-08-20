@@ -1,4 +1,4 @@
-/* Palette inspired by https://lionellevine.github.io/ — cream panel on white, gray frame */
+/* Palette inspired by https://lionellevine.github.io/ — white panel on white, gray frame */
 
 html {
   box-sizing: border-box;
@@ -12,10 +12,10 @@ html {
 
 body {
   margin: 0;
-  padding: 1rem 0.5rem;
+  padding: 0.75rem 0.5rem;
   text-align: center;
   font-family: "Times New Roman", Times, serif;
-  line-height: 1.45;
+  line-height: 1.35;
   font-size: 1rem;
   color: #000;
   background: #ffffff;
@@ -26,9 +26,30 @@ body {
   width: 100%;
   margin: 0 auto;
   text-align: left;
-  background: #fff4d6;
+  background: #ffffff;
   border: 1px solid #808080;
-  padding: 12px 14px;
+  padding: 10px 14px;
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
+ul {
+  margin: 0.4rem 0;
+  padding-left: 1.3rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+li p {
+  margin: 0.15rem 0;
+}
+
+li:last-child {
+  margin-bottom: 0;
 }
 
 a {
@@ -48,14 +69,14 @@ img {
 hr {
   border: none;
   border-top: 1px solid #808080;
-  margin: 0.75rem 0;
+  margin: 0.5rem 0;
 }
 
 .head {
   display: flex;
   gap: 1rem;
   align-items: flex-start;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.35rem;
 }
 
 .head-photo {
@@ -87,15 +108,21 @@ hr {
 h1 {
   font-size: 1.5rem;
   font-weight: bold;
-  margin: 0.5rem 0;
+  margin: 0.35rem 0;
 }
 
 h2 {
   font-size: 1.1rem;
   font-weight: bold;
-  margin: 1.25rem 0 0.35rem 0;
+  margin: 0.85rem 0 0.3rem 0;
 }
 
 h2:first-of-type {
-  margin-top: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.resume-embed {
+  width: 100%;
+  height: 80vh;
+  border: 1px solid #808080;
 }
