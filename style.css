@@ -71,11 +71,6 @@ h2 {
 }
 p { margin: 0 0 1rem; }
 
-/* News */
-.news { list-style: none; padding: 0; margin: 0; }
-.news li { display: grid; grid-template-columns: 5.5rem 1fr; gap: 1rem; margin-bottom: 0.75rem; }
-.news time { color: var(--muted); font-family: "Inter", system-ui, sans-serif; font-size: 0.85rem; padding-top: 0.15rem; }
-
 /* Publications */
 .pubs { list-style: none; padding: 0; margin: 0; }
 .pubs li { margin-bottom: 1.5rem; }
@@ -93,7 +88,6 @@ footer { margin-top: 4rem; color: var(--muted); font-size: 0.85rem; font-family:
   nav { margin-bottom: 2.5rem; }
   .head { flex-direction: column; align-items: flex-start; gap: 1.25rem; }
   .head img { width: 112px; height: 112px; }
-  .news li { grid-template-columns: 1fr; gap: 0; }
 }
 
 .resume-embed { width: 100%; height: 80vh; border: 1px solid var(--faint); border-radius: 4px; }
