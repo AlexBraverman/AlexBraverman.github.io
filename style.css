@@ -2,19 +2,10 @@
   --text: #1a1a1a;
   --muted: #6b6b6b;
   --faint: #e8e6e1;
-  --bg: #fdfcfa;
+  --bg: #ffffff;
   --accent: #b31b1b; /* Cornell red, used sparingly */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text: #e8e6e1;
-    --muted: #9a9893;
-    --faint: #2c2b29;
-    --bg: #161514;
-    --accent: #e06c6c;
-  }
-}
 
 *, *::before, *::after { box-sizing: border-box; }
 
