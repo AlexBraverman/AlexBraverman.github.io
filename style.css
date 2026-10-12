@@ -1,81 +1,128 @@
-:root {
-  --text: #1a1a1a;
-  --muted: #6b6b6b;
-  --faint: #e8e6e1;
-  --bg: #ffffff;
-  --accent: #b31b1b; /* Cornell red, used sparingly */
+/* Palette inspired by https://lionellevine.github.io/ — white panel on white, gray frame */
+
+html {
+  box-sizing: border-box;
 }
 
-
-*, *::before, *::after { box-sizing: border-box; }
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
 body {
   margin: 0;
-  background: var(--bg);
-  color: var(--text);
+  padding: 0.75rem 0.5rem;
+  text-align: center;
   font-family: "Times New Roman", Times, serif;
-  font-size: 1.0625rem;
-  line-height: 1.6;
-  }
+  line-height: 1.35;
+  font-size: 1rem;
+  color: #000;
+  background: #ffffff;
+}
 
 .page {
-  max-width: 42rem;
+  max-width: 45rem;
+  width: 100%;
   margin: 0 auto;
-  padding: 3rem 1.25rem 4rem;
+  text-align: left;
+  background: #ffffff;
+  border: 1px solid #808080;
+  padding: 10px 14px;
 }
 
-/* Nav */
-nav {
+p {
+  margin: 0.5rem 0;
+}
+
+ul {
+  margin: 0.4rem 0;
+  padding-left: 1.3rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+li p {
+  margin: 0.15rem 0;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+a {
+  color: #0000ee;
+}
+
+a:visited {
+  color: #551a8b;
+}
+
+img {
+  max-width: 200px;
+  height: auto;
+  vertical-align: middle;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #808080;
+  margin: 0.5rem 0;
+}
+
+.head {
   display: flex;
-  justify-content: flex-end;
-  align-items: baseline;
-  margin-bottom: 3.5rem;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 0.9rem;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-bottom: 0.35rem;
 }
-nav .links a { margin-left: 1.25rem; }
 
-/* Links */
-a { color: #0000ee; }
-a:visited { color: #551a8b; }
+.head-photo {
+  flex-shrink: 0;
+}
 
-/* Header */
-.head { display: flex; gap: 2rem; align-items: center; margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid #ddd; }
-.head img { width: 150px; height: 150px; object-fit: cover; flex-shrink: 0; border: 2px solid #000; }
-.head h1 { font-size: 1.5rem; font-weight: normal; margin: 0 0 0.4rem; }
-.head p { margin: 0.1rem 0; }
-.social { margin-top: 0.75rem !important; font-family: "Times New Roman", Times, serif; font-size: 0.875rem; }
-.social a { margin-right: 1rem; }
+.head-photo img {
+  display: block;
+  border: 3px solid #000;
+}
 
-/* Sections */
+.head-contact {
+  flex: 1;
+  min-width: 0;
+}
+
+.head-contact h1 {
+  margin-top: 0;
+}
+
+.head-contact p {
+  margin: 0.35rem 0;
+}
+
+.head-contact p:first-of-type {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0.35rem 0;
+}
+
 h2 {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 0.8rem; font-weight: 700;
-  text-transform: uppercase; letter-spacing: 0.1em;
-  color: var(--muted);
-  margin: 2rem 0 1rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid #ddd;
-}
-p { margin: 0 0 1rem; }
-
-/* Publications */
-.pubs { list-style: none; padding: 0; margin: 0; }
-.pubs li { margin-bottom: 1.5rem; }
-.pubs .title { font-weight: 600; display: block; line-height: 1.4; }
-.pubs .authors { color: var(--muted); display: block; font-size: 0.95rem; }
-.pubs .authors b { color: var(--text); font-weight: 500; }
-.pubs .venue { color: var(--muted); display: block; font-size: 0.95rem; font-style: italic; }
-.pubs .tag { font-size: 0.8rem; font-style: normal;
-             margin-right: 0.6rem; }
-
-footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #ddd; color: var(--muted); font-size: 0.85rem; font-family: "Times New Roman", Times, serif; }
-
-@media (max-width: 560px) {
-  .page { padding-top: 2rem; }
-  nav { margin-bottom: 2.5rem; }
-  .head { flex-direction: column; align-items: flex-start; gap: 1.25rem; }
-  .head img { width: 112px; height: 112px; }
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 0.85rem 0 0.3rem 0;
 }
 
-.resume-embed { width: 100%; height: 80vh; border: 1px solid var(--faint); border-radius: 4px; }
+h2:first-of-type {
+  margin-top: 0.5rem;
+}
+
+.resume-embed {
+  width: 100%;
+  height: 80vh;
+  border: 1px solid #808080;
+}
